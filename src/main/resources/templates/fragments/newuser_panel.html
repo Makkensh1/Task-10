@@ -1,0 +1,42 @@
+<div class="container form-group text-center bg-white p-0">
+    <div class="bg-light pb-2">
+        <h5 class="text-center mt-2">Add new user</h5>
+    </div>
+    <div class="col-6 m-auto">
+    <form class="form-control newform" id="form_newuser">
+        <div class="mb-3">
+            <label for="name" class="form-label"><strong>Name</strong></label>
+            <br>
+            <input type="text" class="form-control field_yellow i_name" required id="name" placeholder="Enter name"/>
+            <div class = "messagename"></div>
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label"><strong>Age</strong></label>
+            <br>
+            <input type="number" class="form-control field_yellow i_age" required id="age" placeholder="Enter your age"/>
+            <div class = "messageage"></div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label"><strong>Email</strong></label>
+            <br>
+            <input type="email" class="form-control field_yellow i_email" required id="email" placeholder="Enter your email"/>
+            <div class="messageemail"></div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label"><strong>Password</strong></label>
+            <br>
+            <input type="password" class="form-control field_yellow i_password" required id="password" placeholder="Enter your password"/>
+        </div>
+        <div  class="pb-3">
+            <label for="userroles"><strong>Role</strong></label>
+            <select multiple class="form-control text-center i_userroles" id="userroles" size="2">
+                <option value="ROLE_ADMIN">ADMIN</option>
+                <option value="ROLE_USER">USER</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-success button_new_user" type="submit">Add new user</button>
+        </div>
+        </form>
+    </div>
+</div>

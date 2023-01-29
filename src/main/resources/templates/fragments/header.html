@@ -1,0 +1,8 @@
+<header class="container-fluid d-flex flex-row align-items-center justify-content-between p-3 bg-dark text-white"
+        xmlns:sec="http://www.w3.org/1999/xhtml">
+    <div><b sec:authentication="name"/> with roles:
+        <th:block th:each="role : ${#authentication.authorities}">
+            &nbsp;<span th:text="${role.toString()}"/>
+        </th:block></div>
+    <div><a class="text-light ; text-decoration-none" th:href="@{/logout}">Logout</a></div>
+</header>

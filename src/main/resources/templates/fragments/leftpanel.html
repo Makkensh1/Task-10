@@ -1,0 +1,7 @@
+<div th:fragment="leftpanel(page)">
+  <nav class="btn-group-vertical mt-3 d-md-block">
+    <a sec:authorize="hasRole('ROLE_ADMIN')" type="button" class="btn border-0" th:classappend = "${page} == 'admin' ? btn-primary : btn-light" th:href="@{/admin}">Admin</a>
+    <a type="button"  class="btn border-0"  th:classappend = "${page} == 'user' ? btn-primary : btn-light" th:href="@{/user}">User</a>
+  </nav>
+</div>
+
