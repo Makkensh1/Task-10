@@ -44,50 +44,15 @@ public class AdminRestController {
         return id;
     }
 
-
     @PostMapping("/new")
     public ResponseEntity<HttpStatus> create(@RequestBody @Valid User user, BindingResult bindingResult) {
-        User newuser = new User();
-        if (bindingResult.hasErrors()) {
-            StringBuilder errorMsg = new StringBuilder();
-            List<FieldError> errors = bindingResult.getFieldErrors();
-            for (FieldError error : errors) {
-                errorMsg.append(error.getField())
-                        .append("-")
-                        .append(error.getDefaultMessage())
-                        .append(";");
-            }
-            throw new UserNotCreatedException(errorMsg.toString());
-        } else {
-            newuser.setName(user.getName());
-            newuser.setAge(user.getAge());
-            newuser.setEmail(user.getEmail());
-            newuser.setPassword(user.getPassword());
-            service.addUser(newuser);
-            newuser.setRoles(user.getRoles());
-            service.addUser(newuser);
-            return ResponseEntity.ok(HttpStatus.OK);
-        }
+        return service.checkErrorAddUser(user, bindingResult);
     }
 
     @PostMapping("/saveuser")
     public ResponseEntity<HttpStatus> update(@RequestBody @Valid User user, BindingResult bindingResult) {
-        if (bindingResult.hasErrors()) {
-            StringBuilder errorMsg = new StringBuilder();
-            List<FieldError> errors = bindingResult.getFieldErrors();
-            for (FieldError error : errors) {
-                errorMsg.append(error.getField())
-                        .append("-")
-                        .append(error.getDefaultMessage())
-                        .append(";");
-            }
-            throw new UserNotCreatedException(errorMsg.toString());
-        } else {
-            service.updateUser(user.getId(), user);
-            return ResponseEntity.ok(HttpStatus.OK);
-        }
+        return service.checkErrorUpdateUser(user, bindingResult);
     }
-
 
     @ExceptionHandler
     private ResponseEntity<UserErrorResponse> handleException(UsernameNotFoundException e) {
