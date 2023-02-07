@@ -80,7 +80,7 @@ function formNewClear() {
 
 //запрос на получение всех Users
 function getPostsRequest() {
-    return fetch("http://localhost:8080/admin/table", {
+    return fetch("http://localhost:8071/admin/table", {
         method: "GET",
         headers: {
             "Content-type": "application/json; charset=UTF-8",
@@ -94,7 +94,7 @@ function getPostsRequest() {
 
 // запрос на получение User по id
 function getPostsRequest_found(id) {
-    return fetch("http://localhost:8080/admin/found/" + id, {
+    return fetch("http://localhost:8071/admin/found/" + id, {
         method: "GET",
         headers: {
             "Content-type": "application/json; charset=UTF-8",
@@ -108,7 +108,7 @@ function getPostsRequest_found(id) {
 
 // Запрос на удаление User по id
 function getPostsRequest_delete(id) {
-    return fetch("http://localhost:8080/admin/delete/" + id, {
+    return fetch("http://localhost:8071/admin/delete/" + id, {
         method: "DELETE",
         headers: {
             "Content-type": "application/json; charset=UTF-8",
@@ -260,7 +260,7 @@ function formEditClearMessage() {
 }
 
 function createPostRequest() {
-    return fetch("http://localhost:8080/admin/new", {
+    return fetch("http://localhost:8071/admin/new", {
         method: "POST",
         body: JSON.stringify(state.newPost),
         headers: {
@@ -275,7 +275,7 @@ function createPostRequest() {
 
 
 function savePostRequest() {
-    return fetch("http://localhost:8080/admin/saveuser", {
+    return fetch("http://localhost:8071/admin/saveuser", {
         method: "POST",
         body: JSON.stringify(state.newPost),
         headers: {
