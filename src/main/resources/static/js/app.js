@@ -48,7 +48,7 @@ function tabelFill(tableclass) {
         `;
         }
     }
-    // Формирование таблицы
+
 }
 
 function formNewFill() {
