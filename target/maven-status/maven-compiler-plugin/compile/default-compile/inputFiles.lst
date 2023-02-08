@@ -1,0 +1,17 @@
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\configs\MvcConfig.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\util\UserNotCreatedException.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\controller\UserController.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\model\User.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\dao\UserDao.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\security\AuthProviderImpl.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\util\UserNotFoundException.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\configs\WebSecurityConfig.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\SpringBootSecurityDemoApplication.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\controller\AdminRestController.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\model\Role.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\service\UserService.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\service\UserServiceImpl.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\controller\AdminController.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\configs\SuccessUserHandler.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\util\UserErrorResponse.java
+C:\IdeaProjects\Task-3.1.4\src\main\java\ru\itmentor\spring\boot_security\demo\dao\RoleDao.java

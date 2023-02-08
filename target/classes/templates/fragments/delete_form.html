@@ -1,0 +1,40 @@
+<div th:fragment="delete_form" class="modal-content">
+    <div class="modal-header">
+        <h3 class="modal-title">Delete user</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"  aria-label="Close"></button>
+    </div>
+    <form class="form-control">
+        <div class="modal-body">
+            <div class="container col-6 text-center">
+                    <div>
+                    <label for="userid" class="form-label"><strong>Id</strong></label>
+                    <input class="form-control delete_form_inp_id" id="userid" type="text" disabled/>
+                    </div>
+                    <div>
+                        <label for="name" class="form-label"><strong>Name</strong></label>
+                    <input class="form-control delete_form_inp_fN" id="name" type="text" disabled/>
+                </div>
+                    <div>
+                        <label for="age" class="form-label"><strong>Age</strong></label>
+                    <input class="form-control delete_form_inp_age" id="age" type="number" disabled/>
+                    </div>
+                    <div>
+                        <label for="email" class="form-label"><strong>Email</strong></label>
+                    <input class="form-control delete_form_inp_mail" id="email" type="email" disabled/>
+                    </div>
+                    <div>
+                        <label for="password" class="form-label"><strong>Password</strong></label>
+                    <input class="form-control delete_form_inp_password" id="password" type="password" required disabled/>
+                    </div>
+                    <div>
+                    <label for="roles" class="form-label"><strong>Role</strong></label>
+                    <input class="form-control delete_form_inp_roles" id="roles" type="text" required disabled/>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-danger btn-delete-user submit">Delete</button>
+        </div>
+    </form>
+</div>

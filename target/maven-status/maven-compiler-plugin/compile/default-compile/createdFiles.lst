@@ -1,0 +1,17 @@
+ru\itmentor\spring\boot_security\demo\controller\AdminRestController.class
+ru\itmentor\spring\boot_security\demo\util\UserErrorResponse.class
+ru\itmentor\spring\boot_security\demo\util\UserNotCreatedException.class
+ru\itmentor\spring\boot_security\demo\model\Role.class
+ru\itmentor\spring\boot_security\demo\SpringBootSecurityDemoApplication.class
+ru\itmentor\spring\boot_security\demo\controller\UserController.class
+ru\itmentor\spring\boot_security\demo\service\UserServiceImpl.class
+ru\itmentor\spring\boot_security\demo\controller\AdminController.class
+ru\itmentor\spring\boot_security\demo\model\User.class
+ru\itmentor\spring\boot_security\demo\configs\SuccessUserHandler.class
+ru\itmentor\spring\boot_security\demo\dao\RoleDao.class
+ru\itmentor\spring\boot_security\demo\util\UserNotFoundException.class
+ru\itmentor\spring\boot_security\demo\configs\WebSecurityConfig.class
+ru\itmentor\spring\boot_security\demo\service\UserService.class
+ru\itmentor\spring\boot_security\demo\configs\MvcConfig.class
+ru\itmentor\spring\boot_security\demo\security\AuthProviderImpl.class
+ru\itmentor\spring\boot_security\demo\dao\UserDao.class
