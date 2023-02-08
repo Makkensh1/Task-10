@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class AdminController {
+
     @RequestMapping("/")
     public String formroot() {
         return ("/login");

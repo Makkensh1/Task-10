@@ -15,6 +15,7 @@ import ru.itmentor.spring.boot_security.demo.service.UserService;
 public class AuthProviderImpl implements AuthenticationProvider {
     private final UserService userService;
 
+
     @Autowired
     public AuthProviderImpl(UserService userService) {
         this.userService = userService;

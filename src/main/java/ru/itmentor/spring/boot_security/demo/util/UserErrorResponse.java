@@ -9,6 +9,7 @@ public class UserErrorResponse {
         this.timestamp = timestamp;
     }
 
+
     public String getMessage() {
         return message;
     }

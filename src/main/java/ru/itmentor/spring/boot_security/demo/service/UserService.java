@@ -11,6 +11,7 @@ import java.util.List;
 
 public interface UserService extends UserDetailsService {
 
+
     List<User> getUsers();
     List<Role> getRoles();
     User getUserById(int id);

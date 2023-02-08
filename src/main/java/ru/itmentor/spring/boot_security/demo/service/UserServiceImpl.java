@@ -95,7 +95,7 @@ public class UserServiceImpl implements UserService {
             updateUser(user.getId(), user);
             return ResponseEntity.ok(HttpStatus.OK);
         }
-    };
+    }
 
     @Override
     public ResponseEntity<HttpStatus> checkErrorAddUser(User user, BindingResult bindingResult){
@@ -120,6 +120,6 @@ public class UserServiceImpl implements UserService {
             addUser(newuser);
             return ResponseEntity.ok(HttpStatus.OK);
         }
-    };
+    }
 
 }

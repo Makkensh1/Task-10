@@ -11,6 +11,7 @@ import ru.itmentor.spring.boot_security.demo.service.UserService;
 
 @Controller
 public class UserController {
+
     private final UserService userService;
 
     @Autowired

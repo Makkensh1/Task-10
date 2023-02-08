@@ -12,6 +12,7 @@ import java.util.*;
 
 public class User implements UserDetails {
     @Id
+
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
